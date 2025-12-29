@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio – BTS SIO SLAM – 2025-2026</title>
+    <meta
+      name="description"
+      content="Portfolio étudiant BTS SIO SLAM – Alternance – Projets, compétences, expériences et veilles."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="toolbar no-print">
+      <nav class="nav">
+        <a href="#couverture">Couverture</a>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projets">Projets</a>
+        <a href="#veille">Veille</a>
+        <a href="#annexes">Annexes</a>
+      </nav>
+      <div class="actions">
+        <button id="importJsonBtn" type="button">Importer JSON</button>
+        <input
+          id="jsonFileInput"
+          type="file"
+          accept="application/json"
+          aria-label="Importer un fichier JSON"
+          hidden
+        />
+        <button id="printBtn" type="button">Télécharger en PDF</button>
+        <button id="togglePagedBtn" type="button" aria-pressed="false" title="Basculer en mode pages">Mode pages</button>
+      </div>
+    </header>
+
+    <div id="demoNotice" class="notice no-print" hidden>
+      Données d'exemple affichées. Importez votre content.json ou ouvrez via un
+      serveur local pour charger automatiquement vos données.
+    </div>
+
+    <main>
+      <!-- 1. Couverture -->
+      <section id="couverture" class="page cover">
+        <div class="cover-logos">
+          <img id="logoEcole" alt="Logo de l'école" />
+          <img id="logoEntreprise" alt="Logo de l'entreprise" />
+        </div>
+        <div class="cover-center">
+          <img id="photo" class="photo" alt="Photo professionnelle" />
+          <h1 id="nom">Nom Prénom</h1>
+          <h2 id="titre">Portfolio – BTS SIO SLAM – Année 2025-2026</h2>
+          <div class="meta"><span id="date">2025-2026</span></div>
+        </div>
+      </section>
+
+      <!-- 2. Accueil / Introduction -->
+      <section id="accueil" class="page">
+        <h2>Introduction</h2>
+        <p id="phrase"></p>
+        <ul class="keypoints">
+          <li id="situation"></li>
+          <li id="objectifPro"></li>
+        </ul>
+        <ul class="links">
+          <li>
+            <a id="githubLink" href="#" target="_blank" rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a id="linkedinLink" href="#" target="_blank" rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a id="emailLink" href="#">Email</a></li>
+        </ul>
+      </section>
+
+      <!-- 3. À propos -->
+      <section id="apropos" class="page">
+        <h2>À propos</h2>
+        <div id="aproposContent"></div>
+      </section>
+
+      <!-- 4. Compétences -->
+      <section id="competences" class="page">
+        <h2>Compétences techniques</h2>
+        <div id="competencesGrid" class="grid"></div>
+      </section>
+
+      <!-- 5. Expérience pro -->
+      <section id="experience" class="page">
+        <h2>Expérience professionnelle</h2>
+        <div id="experienceList" class="stack"></div>
+      </section>
+
+      <!-- 6. Projets (E4) -->
+      <section id="projets" class="page">
+        <h2>Projets (E4)</h2>
+        <div id="projetsList" class="cards"></div>
+      </section>
+
+      <!-- 7. Veille (E6.1) -->
+      <section id="veille" class="page">
+        <h2>Veille technologique (E6.1)</h2>
+        <div id="veilleList" class="stack"></div>
+      </section>
+
+      <!-- 8. Annexes -->
+      <section id="annexes" class="page">
+        <h2>Annexes</h2>
+        <ul id="annexesList" class="list"></ul>
+      </section>
+    </main>
+
+    <div id="pager" class="pager no-print" hidden>
+      <button id="prevBtn" type="button" aria-label="Page précédente">← Précédent</button>
+      <span id="pageIndicator" aria-live="polite">1 / 8</span>
+      <button id="nextBtn" type="button" aria-label="Page suivante">Suivant →</button>
+    </div>
+
+    <footer class="no-print footer">
+      <span id="footerName">Nom Prénom</span>
+      ·
+      <a id="footerEmail" href="#">Email</a>
+      <div id="legalText" class="legal"></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+
+
