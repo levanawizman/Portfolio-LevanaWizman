@@ -1,0 +1,112 @@
+{
+  "identite": {
+    "nom": "Ton Nom Prénom",
+    "titre": "Portfolio – BTS SIO SLAM – Année 2025-2026",
+    "date": "Novembre 2025",
+    "photoUrl": "https://via.placeholder.com/220x220.png?text=Photo",
+    "logoEcoleUrl": "https://via.placeholder.com/140x80.png?text=Ecole",
+    "logoEntrepriseUrl": "https://via.placeholder.com/140x80.png?text=Entreprise"
+  },
+  "theme": {
+    "colors": {
+      "brand": "#0e7490",
+      "brand2": "#14b8a6",
+      "panel": "#083344",
+      "card": "#0b3a4a",
+      "text": "#e5f3f6",
+      "muted": "#9cc9d3",
+      "line": "#0f4b5e"
+    },
+    "coverImageUrl": ""
+  },
+  "liens": {
+    "github": "https://github.com/toncompte",
+    "linkedin": "https://linkedin.com/in/tonprofil",
+    "email": "prenom.nom@email.com"
+  },
+  "introduction": {
+    "phrase": "Étudiant(e) en BTS SIO option SLAM en alternance, passionné(e) par le développement et l’apprentissage continu.",
+    "situation": "BTS SIO SLAM (2025–2026), alternance chez 2C Démarches",
+    "objectifPro": "Devenir développeur(se) full‑stack et évoluer vers l’architecture logicielle."
+  },
+  "apropos": {
+    "parcours": "Ton parcours scolaire (lycée, spécialités, premières expériences techniques, projets scolaires).",
+    "pourquoiBts": "Pourquoi le BTS ? Approche concrète, professionnalisante, alternance.",
+    "pourquoiSlam": "Attiré(e) par le développement, la logique, la création d’applications utiles.",
+    "anneeEtranger": "Année à l’étranger (humanitaire) – missions, apprentissages humains.",
+    "objectifs": "Poursuivre en alternance/licence pro, consolider le back-end, monter en front."
+  },
+  "competences": {
+    "langages": ["JavaScript (ES6+)", "TypeScript", "PHP", "Java", "Python", "SQL"],
+    "outils": ["Git", "GitHub", "VS Code", "Docker (bases)", "Postman", "Figma"],
+    "bdd": ["MySQL", "PostgreSQL (bases)", "SQLite"],
+    "methodes": ["Scrum (bases)", "Kanban", "UML"],
+    "enCours": ["React", "Symfony", "Tailwind CSS"]
+  },
+  "experience": [
+    {
+      "entreprise": "2C Démarches",
+      "periode": "2025–2026",
+      "missions": [
+        "Développement et maintenance de fonctionnalités web",
+        "Support aux équipes sur des scripts et automatisations",
+        "Participation aux revues de code et à la documentation"
+      ],
+      "outils": ["Git/GitHub", "React (bases)", "PHP/Symfony (bases)", "MySQL", "Trello"],
+      "apprentissages": [
+        "Montée en compétence sur un codebase existant",
+        "Organisation du travail en alternance",
+        "Bonnes pratiques de versionnement"
+      ]
+    },
+    {
+      "entreprise": "ABC Liv",
+      "periode": "Mission ponctuelle",
+      "missions": ["…"],
+      "outils": ["…"],
+      "apprentissages": ["…"]
+    },
+    {
+      "entreprise": "Cabinet médical",
+      "periode": "Mission ponctuelle",
+      "missions": ["…"],
+      "outils": ["…"],
+      "apprentissages": ["…"]
+    }
+  ],
+  "projets": [
+    {
+      "titre": "Site vitrine React",
+      "contexte": "Projet d’initiation front-end",
+      "objectif": "Créer un site vitrine simple",
+      "role": "Développeur front",
+      "technos": ["React", "Vite", "CSS Modules"],
+      "imageUrl": "https://via.placeholder.com/640x360.png?text=Projet+React",
+      "lecons": "Gestion d’état, composants, props, déploiement sur GitHub Pages"
+    }
+  ],
+  "veille": [
+    {
+      "titre": "Git & GitHub",
+      "problematique": "Comment structurer une bonne pratique de versionnement en équipe ?",
+      "outils": "Git, GitHub Issues/Projects, GitHub Actions (bases)",
+      "exemplePerso": "Mise en place d’un workflow feature branches + PR.",
+      "conclusion": "Mieux collaborer, tracer l’historique et automatiser des vérifications."
+    },
+    {
+      "titre": "IA pour les développeurs",
+      "problematique": "Comment gagner en productivité sans perdre la compréhension ?",
+      "outils": "Assistants IA, Copilot, générateurs de tests",
+      "exemplePerso": "Utilisation de l’IA pour l’audit de code et les tests unitaires.",
+      "conclusion": "Accélérer les tâches répétitives tout en restant maître du code."
+    }
+  ],
+  "annexes": {
+    "cvUrl": "",
+    "veillePdfUrls": [],
+    "projetGitHubUrls": ["https://github.com/toncompte/ton-projet"],
+    "certificats": []
+  }
+}
+
+
