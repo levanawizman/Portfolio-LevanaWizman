@@ -88,10 +88,10 @@ export default function Projects() {
             p.page ? (
               <Card
                 key={p.title}
-                className="overflow-hidden card-float hover:border-indigo-200 group bg-white border-0 shadow-none cursor-pointer transition-transform hover:scale-[1.02]"
+                className="overflow-hidden card-float hover:border-indigo-200 group bg-white/80 backdrop-blur border border-gray-200 shadow-sm cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => navigate(p.page!)}
               >
-                <div className={`overflow-hidden bg-white p-3 ${p.category === 'ecole' ? 'h-52' : ''}`}>
+                <div className={`overflow-hidden bg-gray-50 p-3 ${p.category === 'ecole' ? 'h-52' : ''}`}>
                   <img src={p.img} alt="" className={`w-full rounded-lg object-cover ${p.img.includes('connexion') ? 'h-full object-[center_35%] scale-[1.8]' : p.category === 'ecole' ? 'h-full object-top scale-[1.3]' : ''}`} />
                 </div>
                 <CardHeader>
@@ -99,8 +99,8 @@ export default function Projects() {
                 </CardHeader>
               </Card>
             ) : (
-              <Card key={p.title} className="overflow-hidden card-float hover:border-indigo-200 group bg-white border-0 shadow-none">
-                <div className="overflow-hidden bg-white">
+              <Card key={p.title} className="overflow-hidden card-float hover:border-indigo-200 group bg-white/80 backdrop-blur border border-gray-200 shadow-sm">
+                <div className="overflow-hidden bg-gray-50">
                   <img src={p.img} alt="" className="w-full object-cover" />
                 </div>
                 <CardHeader>
@@ -221,7 +221,7 @@ function MiniGame() {
         <div className="text-sm text-gray-600">Temps: <span className="font-semibold text-gray-900">{timeLeft}s</span></div>
         <div className="text-sm text-gray-600">Meilleur: <span className="font-semibold text-gray-900">{best}</span></div>
       </div>
-      <div ref={gameAreaRef} className="relative h-48 md:h-56 rounded-lg border border-indigo-200 bg-white/70 backdrop-blur overflow-hidden">
+      <div ref={gameAreaRef} className="relative h-48 md:h-56 rounded-lg border border-indigo-200 bg-white/80 backdrop-blur shadow-sm overflow-hidden">
         {!running && (
           <div className="absolute inset-0 flex items-center justify-center text-sm text-gray-600">
             Appuie sur Démarrer puis clique le point pour marquer des points
@@ -332,7 +332,7 @@ function ReactionGame() {
         <div className="text-sm text-gray-600">Score: <span className="font-semibold text-gray-900">{score}</span></div>
         <div className="text-sm text-gray-600">Meilleur: <span className="font-semibold text-gray-900">{best}</span></div>
       </div>
-      <div className="rounded-lg border border-indigo-200 bg-white/70 backdrop-blur p-3">
+      <div className="rounded-lg border border-indigo-200 bg-white/80 backdrop-blur shadow-sm p-3">
         <div className="mb-3 flex items-center justify-between">
           <div className="text-sm text-gray-700">Clique: <span className="font-semibold" style={{ color: target?.hex }}>{target?.name ?? '-'}</span></div>
           <div className="text-xs text-gray-500">Difficulté: {tiles.length} cases</div>
@@ -434,7 +434,7 @@ function BarGame() {
         <div className="text-sm text-gray-600">Vitesse: <span className="font-semibold text-gray-900">{Math.round(speedRef.current * 100)}%</span></div>
         <div className="text-sm text-gray-600">Meilleur: <span className="font-semibold text-gray-900">{best}</span></div>
       </div>
-      <div ref={trackRef} onClick={tryStop} className="relative h-32 rounded-lg border border-indigo-200 bg-white/70 backdrop-blur overflow-hidden cursor-pointer">
+      <div ref={trackRef} onClick={tryStop} className="relative h-32 rounded-lg border border-indigo-200 bg-white/80 backdrop-blur shadow-sm overflow-hidden cursor-pointer">
         <div className="absolute inset-y-0 z-0 bg-emerald-100" style={{ left: `${zone.start * 100}%`, width: `${(zone.end - zone.start) * 100}%` }} />
         <div className="absolute inset-y-0 z-10 bg-[hsl(var(--accent-700))] -translate-x-1/2 transition-transform duration-100" style={{ left: `${pos * 100}%`, width: '8px' }} />
         <div className="absolute z-20 w-3 h-3 rounded-full bg-[hsl(var(--accent-700))] ring-2 ring-white -translate-x-1/2 -translate-y-1/2 top-1/2" style={{ left: `${pos * 100}%` }} />

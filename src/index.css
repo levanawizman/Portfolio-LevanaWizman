@@ -169,6 +169,21 @@ html.dark .text-gray-700 { color: #e5e7eb !important; }
 html.dark .text-gray-600 { color: #e5e7eb !important; }
 html.dark .text-gray-500 { color: #e5e7eb !important; }
 html.dark .border-gray-200 { border-color: #1f2937 !important; }
+html.dark .bg-gray-50 { background-color: #0b1220 !important; }
+html.dark .bg-gray-100 { background-color: rgba(11,18,32,.6) !important; }
+html.dark .hover\:bg-gray-100:hover { background-color: rgba(31,41,55,.5) !important; }
+html.dark .bg-white\/80 { background-color: rgba(11,18,32,.8) !important; }
+/* Textes colorés : passer de -600 à des teintes claires en dark mode */
+html.dark .text-indigo-600 { color: #a5b4fc !important; }
+html.dark .text-emerald-600 { color: #6ee7b7 !important; }
+html.dark .text-pink-600 { color: #f9a8d4 !important; }
+html.dark .text-purple-600 { color: #c4b5fd !important; }
+html.dark .text-blue-600 { color: #93c5fd !important; }
+html.dark .text-amber-600 { color: #fcd34d !important; }
+html.dark .text-orange-600 { color: #fdba74 !important; }
+html.dark .text-violet-600 { color: #c4b5fd !important; }
+html.dark .text-sky-600 { color: #7dd3fc !important; }
+html.dark .text-yellow-600 { color: #fde047 !important; }
 
 /* === Accents dynamiques (data-accent sur <html>) === */
 /* Heading gradient */

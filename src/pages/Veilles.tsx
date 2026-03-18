@@ -13,7 +13,7 @@ export default function Veilles() {
           <Button size="sm" variant={tab === 'git' ? 'secondary' : 'outline'} onClick={() => setTab('git')}>Sujet 1 – Git & GitHub</Button>
           <Button size="sm" variant={tab === 'ia' ? 'secondary' : 'outline'} onClick={() => setTab('ia')}>Sujet 2 – IA</Button>
         </div>
-        <div className="mt-4 p-4 border border-indigo-200 rounded-lg bg-white/70 backdrop-blur card-float">
+        <div className="mt-4 p-4 border border-indigo-200 rounded-lg bg-white/80 backdrop-blur shadow-sm card-float">
           {tab === 'git' ? (
             <div className="space-y-3 text-gray-700">
               <img src="https://via.placeholder.com/800x300.png?text=Git+%26+GitHub" alt="Git et GitHub" className="w-full h-36 md:h-44 object-cover rounded-md ring-1 ring-indigo-100" />

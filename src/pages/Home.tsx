@@ -139,7 +139,7 @@ export default function Home() {
             </Button>
           </div>
           {showTextSize && (
-            <div className="mt-3 p-3 border border-indigo-200 rounded-lg bg-white/70 backdrop-blur card-float flex flex-col items-center">
+            <div className="mt-3 p-3 border border-indigo-200 rounded-lg bg-white/80 backdrop-blur shadow-sm card-float flex flex-col items-center">
               <div className="flex items-center justify-center gap-4">
                 <span className="text-xs text-gray-600">A-</span>
                 <div className="slider-with-mid relative w-56">
@@ -253,7 +253,7 @@ function MiniGame() {
         <div className="text-sm text-gray-600">Temps: <span className="font-semibold text-gray-900">{timeLeft}s</span></div>
         <div className="text-sm text-gray-600">Meilleur: <span className="font-semibold text-gray-900">{best}</span></div>
       </div>
-      <div ref={gameAreaRef} className="relative h-48 md:h-56 rounded-lg border border-indigo-200 bg-white/70 backdrop-blur overflow-hidden">
+      <div ref={gameAreaRef} className="relative h-48 md:h-56 rounded-lg border border-indigo-200 bg-white/80 backdrop-blur shadow-sm overflow-hidden">
         {!running && (
           <div className="absolute inset-0 flex items-center justify-center text-sm text-gray-600">
             Appuie sur Démarrer puis clique le point pour marquer des points
@@ -368,7 +368,7 @@ function ReactionGame() {
         <div className="text-sm text-gray-600">Score: <span className="font-semibold text-gray-900">{score}</span></div>
         <div className="text-sm text-gray-600">Meilleur: <span className="font-semibold text-gray-900">{best}</span></div>
       </div>
-      <div className="rounded-lg border border-indigo-200 bg-white/70 backdrop-blur p-3">
+      <div className="rounded-lg border border-indigo-200 bg-white/80 backdrop-blur shadow-sm p-3">
         <div className="mb-3 flex items-center justify-between">
           <div className="text-sm text-gray-700">Clique: <span className="font-semibold" style={{ color: target?.hex }}>{target?.name ?? '-'}</span></div>
           <div className="text-xs text-gray-500">Difficulté: {tiles.length} cases</div>
@@ -471,7 +471,7 @@ function BarGame() {
         <div className="text-sm text-gray-600">Vitesse: <span className="font-semibold text-gray-900">{Math.round(speedRef.current * 100)}%</span></div>
         <div className="text-sm text-gray-600">Meilleur: <span className="font-semibold text-gray-900">{best}</span></div>
       </div>
-      <div ref={trackRef} onClick={tryStop} className="relative h-32 rounded-lg border border-indigo-200 bg-white/70 backdrop-blur overflow-hidden cursor-pointer">
+      <div ref={trackRef} onClick={tryStop} className="relative h-32 rounded-lg border border-indigo-200 bg-white/80 backdrop-blur shadow-sm overflow-hidden cursor-pointer">
         {/* zone */}
         <div className="absolute inset-y-0 z-0 bg-emerald-100" style={{ left: `${zone.start * 100}%`, width: `${(zone.end - zone.start) * 100}%` }} />
         {/* barre */}
@@ -509,7 +509,7 @@ function VeillesSection() {
         <Button size="sm" variant={tab === 'git' ? 'secondary' : 'outline'} onClick={() => setTab('git')}>Git & GitHub</Button>
         <Button size="sm" variant={tab === 'ia' ? 'secondary' : 'outline'} onClick={() => setTab('ia')}>IA pour les développeurs</Button>
       </div>
-      <div className="mt-4 p-4 border border-indigo-200 rounded-lg bg-white/70 backdrop-blur card-float">
+      <div className="mt-4 p-4 border border-indigo-200 rounded-lg bg-white/80 backdrop-blur shadow-sm card-float">
         {tab === 'git' ? (
           <div className="space-y-3 text-gray-700">
             <p><strong>📌 Sujet:</strong> Git et GitHub – Travail collaboratif dans le développement</p>
