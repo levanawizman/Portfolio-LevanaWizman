@@ -9,10 +9,10 @@ export default function ProjetFormaGreen() {
     <section className="max-w-6xl mx-auto px-4 py-12">
       {/* Retour */}
       <button
-        onClick={() => navigate(-1)}
+        onClick={() => navigate('/projects?tab=entreprise')}
         className="inline-flex items-center gap-1.5 text-sm text-indigo-400 hover:text-indigo-300 font-medium transition mb-8"
       >
-        <ArrowLeft size={16} /> Retour aux projets
+        <ArrowLeft size={16} /> Retour aux projets d'entreprise
       </button>
 
       {/* En-t&#234;te */}

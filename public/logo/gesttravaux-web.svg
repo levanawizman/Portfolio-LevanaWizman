@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" rx="16" fill="#f8fafc"/>
+  <rect x="40" y="40" width="320" height="160" rx="12" fill="#eef2ff" stroke="#818cf8" stroke-width="2"/>
+  <rect x="60" y="60" width="120" height="30" rx="6" fill="#818cf8"/>
+  <text x="120" y="80" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="system-ui">Symfony 7</text>
+  <rect x="200" y="60" width="140" height="30" rx="6" fill="#10b981"/>
+  <text x="270" y="80" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="system-ui">GestTravaux</text>
+  <rect x="60" y="110" width="80" height="24" rx="4" fill="#e0e7ff"/>
+  <text x="100" y="127" text-anchor="middle" fill="#4338ca" font-size="11" font-weight="600" font-family="system-ui">PHP</text>
+  <rect x="150" y="110" width="90" height="24" rx="4" fill="#d1fae5"/>
+  <text x="195" y="127" text-anchor="middle" fill="#065f46" font-size="11" font-weight="600" font-family="system-ui">PostgreSQL</text>
+  <rect x="250" y="110" width="90" height="24" rx="4" fill="#fef3c7"/>
+  <text x="295" y="127" text-anchor="middle" fill="#92400e" font-size="11" font-weight="600" font-family="system-ui">Bootstrap</text>
+  <text x="200" y="170" text-anchor="middle" fill="#6366f1" font-size="13" font-weight="600" font-family="system-ui">Application Web - Projet d'école</text>
+</svg>

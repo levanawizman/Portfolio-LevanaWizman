@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Github } from 'lucide-react'
 import { useInView } from '@/hooks/useInView'
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 
 type Project = {
   title: string
@@ -28,11 +28,31 @@ const projects: Project[] = [
     category: 'entreprise',
     page: '/projet/formagreen',
   },
+  {
+    title: 'GestTravaux Pro — Web',
+    desc: 'GestTravaux Pro — Web',
+    img: '/screenshots/gesttravaux-web/connexion.jpg',
+    stack: ['Symfony 7', 'PHP', 'PostgreSQL', 'Twig', 'Bootstrap'],
+    github: 'https://github.com/ort-montreuil/BTS-SIO-G6-2026-GESTTRAVAUX-Web',
+    category: 'ecole',
+    page: '/projet/gesttravaux-web',
+  },
+  {
+    title: 'GestTravaux Pro — Java',
+    desc: 'GestTravaux Pro — Java',
+    img: '/screenshots/gesttravaux-java/dashboard.jpg',
+    stack: ['Java', 'JavaFX', 'PostgreSQL'],
+    github: 'https://github.com/ort-montreuil/BTS-SIO-G6-2026-GESTTRAVAUX-Java',
+    category: 'ecole',
+    page: '/projet/gesttravaux-java',
+  },
 ]
 
 export default function Projects() {
   const { ref, inView } = useInView<HTMLDivElement>()
-  const [active, setActive] = useState<'ecole' | 'entreprise' | 'perso'>('entreprise')
+  const [searchParams] = useSearchParams()
+  const tabParam = searchParams.get('tab') as 'ecole' | 'entreprise' | 'perso' | null
+  const [active, setActive] = useState<'ecole' | 'entreprise' | 'perso'>(tabParam || 'entreprise')
   const [showGame, setShowGame] = useState(false)
   const filtered = projects.filter((p) => p.category === active)
   const navigate = useNavigate()
@@ -71,8 +91,8 @@ export default function Projects() {
                 className="overflow-hidden card-float hover:border-indigo-200 group bg-white border-0 shadow-none cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => navigate(p.page!)}
               >
-                <div className="overflow-hidden bg-white">
-                  <img src={p.img} alt="" className="w-full object-cover" />
+                <div className={`overflow-hidden bg-white p-3 ${p.category === 'ecole' ? 'h-52' : ''}`}>
+                  <img src={p.img} alt="" className={`w-full rounded-lg object-cover ${p.img.includes('connexion') ? 'h-full object-[center_35%] scale-[1.8]' : p.category === 'ecole' ? 'h-full object-top scale-[1.3]' : ''}`} />
                 </div>
                 <CardHeader>
                   <h3 className="font-semibold text-lg text-center">{p.desc}</h3>
