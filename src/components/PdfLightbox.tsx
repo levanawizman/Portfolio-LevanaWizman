@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { ChevronLeft, ChevronRight, Download, Maximize, Minimize, X, ZoomIn, ZoomOut } from 'lucide-react'
 import * as pdfjsLib from 'pdfjs-dist'
+import type { PDFDocumentProxy } from 'pdfjs-dist'
 
 // Configure le worker (ESM) pour Vite et les polices standard (PDF.js v4)
 const pdfWorker = new Worker(new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url), { type: 'module' })
-// @ts-expect-error workerPort n'a pas de type exporté dans ce build
 pdfjsLib.GlobalWorkerOptions.workerPort = pdfWorker
+// @ts-expect-error standardFontDataUrl exists at runtime but is missing from the type definitions
 pdfjsLib.GlobalWorkerOptions.standardFontDataUrl =
   'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/standard_fonts/'
 
@@ -64,7 +65,7 @@ export function PdfLightbox({ pdfUrl, onClose, minimal, downloadFilename, autoFu
       canvas.style.width = `${displayWidth}px`
       canvas.style.height = `${displayHeight}px`
 
-      await page.render({ canvasContext: context, viewport }).promise
+      await page.render({ canvas, canvasContext: context, viewport }).promise
     },
     [doc, zoom]
   )

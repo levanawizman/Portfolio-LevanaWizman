@@ -21,14 +21,6 @@ export function ContactModal({ open, onClose }: ContactModalProps) {
   const subject = 'Contact portfolio'
   const gmailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent('levanawizman25@gmail.com')}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent('Nom: ' + name + '\nEmail: ' + email + '\n\n' + message)}`
 
-  function resetForm() {
-    setName('')
-    setEmail('')
-    setMessage('')
-    window.setTimeout(() => nameInputRef.current?.focus(), 0)
-    setPreview(false)
-  }
-
   React.useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (e.key === 'Escape') onClose()

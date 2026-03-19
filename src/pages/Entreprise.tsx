@@ -1,8 +1,7 @@
 import { useInView } from '@/hooks/useInView'
 import { Button } from '@/components/ui/button'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { X } from 'lucide-react'
 
 export default function Entreprise() {
   const { ref, inView } = useInView<HTMLDivElement>()

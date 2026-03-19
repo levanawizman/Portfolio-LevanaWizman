@@ -61,7 +61,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     }
 
     if (asChild && React.isValidElement(_children)) {
-      const child = _children as React.ReactElement
+      const child = _children as React.ReactElement<any>
       const mergedClassName = cn(
         buttonVariants({ variant, size }),
         child.props?.className,

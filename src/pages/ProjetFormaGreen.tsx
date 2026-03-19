@@ -1,4 +1,3 @@
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Github, ArrowLeft } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'

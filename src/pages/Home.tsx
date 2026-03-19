@@ -1,17 +1,13 @@
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Link } from 'react-router-dom'
 import { Moon, Sun, Palette, Type } from 'lucide-react'
 import { useInView } from '@/hooks/useInView'
 import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
   const { ref, inView } = useInView<HTMLDivElement>()
-  const [sparksOn, setSparksOn] = useState(false)
   const colorInputRef = useRef<HTMLInputElement>(null)
   const [showTextSize, setShowTextSize] = useState(false)
   const [fontScale, setFontScale] = useState(1)
-  const [showGame, setShowGame] = useState(false)
   const [isDark, setIsDark] = useState(() => {
     try {
       return document.documentElement.classList.contains('dark') || localStorage.getItem('theme') === 'dark'
@@ -24,30 +20,6 @@ export default function Home() {
     setIsDark(darkNow)
     try { localStorage.setItem('theme', darkNow ? 'dark' : 'light') } catch {}
   }
-  function spawnSparkAt(x: number, y: number) {
-    const span = document.createElement('span')
-    span.className = 'spark'
-    span.style.left = `${x}px`
-    span.style.top = `${y}px`
-    ;(span.style as any).position = 'fixed'
-    const dx = (Math.random() - 0.5) * 20
-    const dy = (Math.random() - 0.8) * 20
-    span.style.setProperty('--dx', `${dx}px`)
-    span.style.setProperty('--dy', `${dy}px`)
-    document.body.appendChild(span)
-    setTimeout(() => span.remove(), 520)
-  }
-  // Global: étincelles suivent la souris tant que activé
-  useEffect(() => {
-    if (!sparksOn) return
-    const handler = (e: MouseEvent) => {
-      spawnSparkAt(e.clientX, e.clientY)
-    }
-    document.addEventListener('mousemove', handler)
-    return () => document.removeEventListener('mousemove', handler)
-  }, [sparksOn])
-
-  function toggleSparks() { setSparksOn((v) => !v) }
 
   // Sélection de couleur d'accent
   function hexToHsl(hex: string) {
@@ -172,7 +144,7 @@ export default function Home() {
   )
 }
 
-function GameHub() {
+export function GameHub() {
   const [tab, setTab] = useState<'cible' | 'reaction' | 'barre'>('cible')
   return (
     <div className="mt-6">
