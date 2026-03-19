@@ -29,9 +29,9 @@ export default function Veille() {
                 { name: 'LinkedIn', detail: 'Articles et retours de devs' },
                 { name: 'Le Journal du Net', detail: 'Actus tech' },
               ].map((o) => (
-                <div key={o.name} className="rounded-lg bg-sky-50 border border-sky-200 px-2 py-1.5 text-center">
-                  <p className="text-[11px] font-semibold text-sky-800">{o.name}</p>
-                  <p className="text-[10px] text-sky-600">{o.detail}</p>
+                <div key={o.name} className="rounded-lg bg-gray-800 border border-gray-600 px-2 py-1.5 text-center">
+                  <p className="text-[11px] font-semibold text-sky-300">{o.name}</p>
+                  <p className="text-[10px] text-gray-300">{o.detail}</p>
                 </div>
               ))}
             </div>
