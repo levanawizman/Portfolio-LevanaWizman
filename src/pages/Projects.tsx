@@ -46,6 +46,15 @@ const projects: Project[] = [
     category: 'ecole',
     page: '/projet/gesttravaux-java',
   },
+  {
+    title: 'PhotoAgenda',
+    desc: 'Application de gestion pour photographe',
+    img: '/logo/photoagenda-logo.png',
+    stack: ['Next.js', 'React', 'Tailwind CSS'],
+    demo: 'https://agenda.wizycode.fr',
+    category: 'perso',
+    page: '/projet/agenda',
+  },
 ]
 
 export default function Projects() {
@@ -91,8 +100,8 @@ export default function Projects() {
                 className="overflow-hidden card-float hover:border-indigo-200 group bg-white/80 backdrop-blur border border-gray-200 shadow-sm cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => navigate(p.page!)}
               >
-                <div className={`overflow-hidden bg-gray-50 p-3 ${p.category === 'ecole' ? 'h-52' : ''}`}>
-                  <img src={p.img} alt="" className={`w-full rounded-lg object-cover ${p.img.includes('connexion') ? 'h-full object-[center_35%] scale-[1.8]' : p.category === 'ecole' ? 'h-full object-top scale-[1.3]' : ''}`} />
+                <div className="overflow-hidden bg-gray-50 p-3 h-52 flex items-center justify-center">
+                  <img src={p.img} alt="" className={`rounded-lg object-contain max-h-full ${p.img.includes('connexion') ? 'w-full object-cover h-full object-[center_35%] scale-[1.8]' : p.category === 'ecole' ? 'w-full object-cover h-full object-top scale-[1.3]' : ''}`} />
                 </div>
                 <CardHeader>
                   <h3 className="font-semibold text-lg text-center">{p.desc}</h3>

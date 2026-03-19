@@ -17,6 +17,7 @@ import Veille from '@/pages/Veille'
 import ProjetFormaGreen from '@/pages/ProjetFormaGreen'
 import ProjetGestTravauxWeb from '@/pages/ProjetGestTravauxWeb'
 import ProjetGestTravauxJava from '@/pages/ProjetGestTravauxJava'
+import ProjetAgenda from '@/pages/ProjetAgenda'
 
 export default function App() {
   const [contactOpen, setContactOpen] = React.useState(false)
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/projet/formagreen" element={<ProjetFormaGreen />} />
         <Route path="/projet/gesttravaux-web" element={<ProjetGestTravauxWeb />} />
         <Route path="/projet/gesttravaux-java" element={<ProjetGestTravauxJava />} />
+        <Route path="/projet/agenda" element={<ProjetAgenda />} />
         <Route path="/all" element={<All />} />
       </Routes>
       <Footer />
