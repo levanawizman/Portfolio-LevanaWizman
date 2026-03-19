@@ -187,16 +187,10 @@ export default function ProjetAgenda() {
 
         {/* Auto-critique */}
         <div className="rounded-2xl border border-gray-200 p-5 shadow-sm" style={{ borderLeft: '4px solid #a78bfa' }}>
-          <h2 className="text-xl font-bold mb-2 flex items-center gap-2" style={{ color: '#c4b5fd' }}>
-            &#128172; Auto-critique
-          </h2>
           <p className="leading-relaxed">
-            Ce projet m'a permis de d&eacute;couvrir <strong style={{ color: '#a78bfa' }}>Next.js</strong> et de
-            passer d'un simple site vitrine &agrave; une vraie application m&eacute;tier avec de la logique complexe
-            (gestion de paiements, g&eacute;n&eacute;ration de documents, gestion d'&eacute;quipe). Le fait de travailler
-            pour un utilisateur r&eacute;el m'a oblig&eacute;e &agrave; penser <strong style={{ color: '#a78bfa' }}>UX et fiabilit&eacute;</strong> en
-            permanence. Il reste des am&eacute;liorations possibles, notamment sur la gestion hors-ligne et l'ajout
-            de statistiques, mais l'application r&eacute;pond d&eacute;j&agrave; parfaitement aux besoins du quotidien.
+            Ce projet est n&eacute; d'une envie simple : <strong style={{ color: '#a78bfa' }}>mettre mes comp&eacute;tences au service d'un proche</strong>.
+            &Ccedil;a m'a prouv&eacute; que le code peut avoir un <strong style={{ color: '#a78bfa' }}>impact concret et imm&eacute;diat</strong> sur
+            la vie des gens autour de moi, et c'est ce genre de projet qui me motive &agrave; continuer.
           </p>
         </div>
 
