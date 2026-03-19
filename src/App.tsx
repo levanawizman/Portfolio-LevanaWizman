@@ -18,6 +18,8 @@ import ProjetFormaGreen from '@/pages/ProjetFormaGreen'
 import ProjetGestTravauxWeb from '@/pages/ProjetGestTravauxWeb'
 import ProjetGestTravauxJava from '@/pages/ProjetGestTravauxJava'
 import ProjetAgenda from '@/pages/ProjetAgenda'
+import ProjetBudgetPilot from '@/pages/ProjetBudgetPilot'
+import ProjetMosaic from '@/pages/ProjetMosaic'
 
 export default function App() {
   const [contactOpen, setContactOpen] = React.useState(false)
@@ -46,6 +48,8 @@ export default function App() {
         <Route path="/projet/gesttravaux-web" element={<ProjetGestTravauxWeb />} />
         <Route path="/projet/gesttravaux-java" element={<ProjetGestTravauxJava />} />
         <Route path="/projet/agenda" element={<ProjetAgenda />} />
+        <Route path="/projet/budgetpilot" element={<ProjetBudgetPilot />} />
+        <Route path="/projet/mosaic" element={<ProjetMosaic />} />
         <Route path="/all" element={<All />} />
       </Routes>
       <Footer />

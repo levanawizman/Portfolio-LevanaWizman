@@ -55,6 +55,23 @@ const projects: Project[] = [
     category: 'perso',
     page: '/projet/agenda',
   },
+  {
+    title: 'BudgetPilot',
+    desc: 'Application de suivi de dépenses personnelles',
+    img: '/screenshots/budgetpilot/dashboard.jpg',
+    stack: ['React', 'TypeScript', 'Node.js', 'Prisma', 'SQLite'],
+    category: 'perso',
+    page: '/projet/budgetpilot',
+  },
+  {
+    title: 'Mosaic',
+    desc: 'Générateur de photo-mosaïques',
+    img: '/logo/mosaic-logo.jpg',
+    stack: ['Next.js', 'React', 'Tailwind CSS', 'Canvas API'],
+    demo: 'https://mosaic.wizycode.fr',
+    category: 'perso',
+    page: '/projet/mosaic',
+  },
 ]
 
 export default function Projects() {
@@ -97,13 +114,13 @@ export default function Projects() {
             p.page ? (
               <Card
                 key={p.title}
-                className="overflow-hidden card-float hover:border-indigo-200 group bg-white/80 backdrop-blur border border-gray-200 shadow-sm cursor-pointer transition-transform hover:scale-[1.02]"
+                className="overflow-hidden card-float hover:border-indigo-200 group bg-white/80 backdrop-blur border border-gray-200 shadow-sm cursor-pointer transition-transform hover:scale-[1.02] flex flex-col"
                 onClick={() => navigate(p.page!)}
               >
                 <div className="overflow-hidden bg-gray-50 p-3 h-52 flex items-center justify-center">
-                  <img src={p.img} alt="" className={`rounded-lg object-contain max-h-full ${p.img.includes('connexion') ? 'w-full object-cover h-full object-[center_35%] scale-[1.8]' : p.category === 'ecole' ? 'w-full object-cover h-full object-top scale-[1.3]' : ''}`} />
+                  <img src={p.img} alt="" className={`rounded-lg object-contain max-h-full w-full ${p.img.includes('connexion') ? 'object-cover h-full object-[center_35%] scale-[1.8]' : p.category === 'ecole' ? 'object-cover h-full object-top scale-[1.3]' : ''}`} />
                 </div>
-                <CardHeader>
+                <CardHeader className="mt-auto">
                   <h3 className="font-semibold text-lg text-center">{p.desc}</h3>
                 </CardHeader>
               </Card>
