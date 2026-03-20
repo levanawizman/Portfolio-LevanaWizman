@@ -136,9 +136,7 @@ export default function ProjetBudgetPilot() {
               <div className="space-y-2">
                 {[
                   ['React 18', 'composants dynamiques avec TypeScript'],
-                  ['Vite', 'build rapide et hot reload'],
                   ['Tailwind CSS', 'style responsive et mode sombre'],
-                  ['Recharts', 'graphiques interactifs (camembert, courbes)'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(96,165,250,0.1)' }}>
                     <span className="font-semibold" style={{ color: '#93c5fd' }}>{name}</span>
@@ -153,7 +151,6 @@ export default function ProjetBudgetPilot() {
                 {[
                   ['Node.js + Express', 'API REST en TypeScript'],
                   ['Prisma ORM', 'gestion de la base de données'],
-                  ['SQLite', 'base légère et portable'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(129,140,248,0.1)' }}>
                     <span className="font-semibold" style={{ color: '#a5b4fc' }}>{name}</span>

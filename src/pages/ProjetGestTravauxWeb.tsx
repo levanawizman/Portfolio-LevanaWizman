@@ -151,12 +151,7 @@ export default function ProjetGestTravauxWeb() {
               <div className="space-y-1.5">
                 {[
                   ['Symfony 7', 'backend, routing, sécurité'],
-                  ['Twig', 'templates HTML'],
-                  ['Doctrine ORM', 'mapping objet-relationnel'],
                   ['PostgreSQL', 'base de données'],
-                  ['Bootstrap', 'responsive design'],
-                  ['JavaScript', 'drag & drop, carte'],
-                  ['Docker', 'conteneurisation BDD'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2 bg-gray-50">
                     <span className="font-semibold text-sm text-blue-600">{name}</span>
@@ -171,8 +166,6 @@ export default function ProjetGestTravauxWeb() {
                 {[
                   ['Git / GitHub', 'collaboration en équipe'],
                   ['Équipe de 3', 'Web (Symfony) + Desktop (Java)'],
-                  ['Architecture MVC', 'modèle / vue / contrôleur'],
-                  ['3 releases', 'livraisons progressives'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2 bg-gray-50">
                     <span className="font-semibold text-sm text-indigo-600">{name}</span>

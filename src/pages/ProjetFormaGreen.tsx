@@ -110,8 +110,6 @@ export default function ProjetFormaGreen() {
                   {[
                     ['React', 'composants r\u00e9utilisables, SPA fluide'],
                     ['Tailwind CSS', 'style rapide et responsive'],
-                    ['Vite', 'bundler ultra-rapide'],
-                    ['Vercel', 'd\u00e9ploiement continu automatique'],
                   ].map(([name, desc], i) => (
                     <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(96,165,250,0.1)' }}>
                       <span className="font-semibold" style={{ color: '#93c5fd' }}>{name}</span>
@@ -126,8 +124,6 @@ export default function ProjetFormaGreen() {
                   {[
                     ['Git / GitHub', 'versionning et collaboration'],
                     ['Travail en bin\u00f4me', 'r\u00e9partition des t\u00e2ches'],
-                    ['Architecture one-page', 'navigation par ancres'],
-                    ['Routing hash', 'pages l\u00e9gales s\u00e9par\u00e9es'],
                   ].map(([name, desc], i) => (
                     <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(129,140,248,0.1)' }}>
                       <span className="font-semibold" style={{ color: '#a5b4fc' }}>{name}</span>

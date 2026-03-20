@@ -103,10 +103,7 @@ export default function ProjetMosaic() {
               <div className="space-y-2">
                 {[
                   ['Next.js', 'framework React pour le rendu et le routing'],
-                  ['React', 'composants interactifs et gestion d\u2019\u00e9tat'],
-                  ['Tailwind CSS', 'style responsive et design moderne'],
                   ['Canvas API', 'analyse des couleurs et composition de la mosa\u00efque'],
-                  ['Vercel', 'd\u00e9ploiement continu automatique'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(96,165,250,0.1)' }}>
                     <span className="font-semibold" style={{ color: '#93c5fd' }}>{name}</span>
@@ -121,7 +118,6 @@ export default function ProjetMosaic() {
                 {[
                   ['Projet solo', 'conception et d\u00e9veloppement en autonomie'],
                   ['Exp\u00e9rimentation', 'tests d\u2019algorithmes de correspondance de couleurs'],
-                  ['Focus UX', 'interface simple, r\u00e9sultat imm\u00e9diat'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(129,140,248,0.1)' }}>
                     <span className="font-semibold" style={{ color: '#a5b4fc' }}>{name}</span>

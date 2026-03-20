@@ -175,11 +175,6 @@ export default function ProjetGestTravauxJava() {
                 {[
                   ['Java 17', 'langage objet avec modules JPMS'],
                   ['JavaFX + FXML', 'interface graphique desktop'],
-                  ['Spring Boot 3.1.5', 'injection de dépendances, cycle de vie'],
-                  ['Hibernate / JPA', 'mapping objet-relationnel, repositories'],
-                  ['PostgreSQL', 'BDD partagée avec la partie web'],
-                  ['Docker Compose', 'conteneurisation PostgreSQL + Adminer'],
-                  ['Maven', 'gestion des dépendances et du build'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(96,165,250,0.1)' }}>
                     <span className="font-semibold" style={{ color: '#2563eb' }}>{name}</span>
@@ -194,8 +189,6 @@ export default function ProjetGestTravauxJava() {
                 {[
                   ['Git / GitHub', 'collaboration en équipe'],
                   ['Équipe de 3', 'Web (Symfony) + Desktop (Java)'],
-                  ['Architecture en couches', 'Controller / Service / Repository'],
-                  ['BDD partagée', 'schéma commun via Hibernate auto-update'],
                 ].map(([name, desc], i) => (
                   <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(129,140,248,0.1)' }}>
                     <span className="font-semibold" style={{ color: '#4f46e5' }}>{name}</span>

@@ -105,8 +105,6 @@ export default function ProjetAgenda() {
                   {[
                     ['Next.js', 'framework React avec rendu serveur'],
                     ['React', 'composants dynamiques et interactifs'],
-                    ['Tailwind CSS', 'style rapide et responsive'],
-                    ['Vercel', 'd\u00e9ploiement continu automatique'],
                   ].map(([name, desc], i) => (
                     <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(96,165,250,0.1)' }}>
                       <span className="font-semibold" style={{ color: '#93c5fd' }}>{name}</span>
@@ -121,7 +119,6 @@ export default function ProjetAgenda() {
                   {[
                     ['Projet solo', 'conception, d\u00e9veloppement et d\u00e9ploiement en autonomie'],
                     ['Feedback utilisateur', 'it\u00e9rations avec le photographe au quotidien'],
-                    ['Approche m\u00e9tier', 'adapt\u00e9 aux besoins r\u00e9els du terrain'],
                   ].map(([name, desc], i) => (
                     <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(129,140,248,0.1)' }}>
                       <span className="font-semibold" style={{ color: '#a5b4fc' }}>{name}</span>
