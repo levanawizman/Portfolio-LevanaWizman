@@ -60,10 +60,6 @@ export default function ProjetGestTravauxWeb() {
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-violet-500/20 text-violet-600 border border-violet-500/30">Symfony 7</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-indigo-500/20 text-indigo-600 border border-indigo-500/30">PHP</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-sky-500/20 text-sky-600 border border-sky-500/30">PostgreSQL</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-amber-500/20 text-amber-600 border border-amber-500/30">Twig</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-emerald-500/20 text-emerald-600 border border-emerald-500/30">Doctrine ORM</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-500/20 text-blue-600 border border-blue-500/30">Bootstrap</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-yellow-500/20 text-yellow-600 border border-yellow-500/30">JavaScript</span>
         </div>
         <div className="flex gap-3">
           <Button asChild variant="outline">

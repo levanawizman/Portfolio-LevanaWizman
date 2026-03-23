@@ -32,7 +32,7 @@ const projects: Project[] = [
     title: 'GestTravaux Pro — Web',
     desc: 'GestTravaux Pro — Web',
     img: '/screenshots/gesttravaux-web/connexion.jpg',
-    stack: ['Symfony 7', 'PHP', 'PostgreSQL', 'Twig', 'Bootstrap'],
+    stack: ['Symfony 7', 'PHP', 'PostgreSQL'],
     github: 'https://github.com/ort-montreuil/BTS-SIO-G6-2026-GESTTRAVAUX-Web',
     category: 'ecole',
     page: '/projet/gesttravaux-web',
