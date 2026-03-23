@@ -74,7 +74,7 @@ export default function Entreprise() {
 
             <div className="flex justify-center">
               <Button asChild variant="outline">
-                <a href="/projects" title="Voir le projet d'entreprise">Voir le projet d'entreprise</a>
+                <Link to="/projet/formagreen">Voir le projet d'entreprise</Link>
               </Button>
             </div>
           </div>
