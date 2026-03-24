@@ -48,11 +48,7 @@ export default function ProjetBudgetPilot() {
         <p className="text-lg text-gray-500 mb-5 font-medium">Application de suivi de dépenses &mdash; Projet personnel</p>
         <div className="flex flex-wrap justify-center gap-2 mb-6">
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-sky-500/20 text-sky-300 border border-sky-500/30">React</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">TypeScript</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Tailwind CSS</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-500/20 text-green-300 border border-green-500/30">Node.js</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-500/20 text-gray-300 border border-gray-500/30">Express</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-violet-500/20 text-violet-300 border border-violet-500/30">Prisma</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">SQLite</span>
         </div>
         <div className="flex gap-3">
