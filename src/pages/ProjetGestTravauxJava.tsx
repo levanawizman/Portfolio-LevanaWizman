@@ -94,10 +94,7 @@ export default function ProjetGestTravauxJava() {
           {[
             ['Java 17', 'bg-orange-500/20 text-orange-600 border-orange-500/30'],
             ['JavaFX', 'bg-indigo-500/20 text-indigo-600 border-indigo-500/30'],
-            ['Spring Boot', 'bg-emerald-500/20 text-emerald-600 border-emerald-500/30'],
-            ['Hibernate ORM', 'bg-amber-500/20 text-amber-600 border-amber-500/30'],
             ['PostgreSQL', 'bg-sky-500/20 text-sky-600 border-sky-500/30'],
-            ['Material Design', 'bg-pink-500/20 text-pink-600 border-pink-500/30'],
           ].map(([name, cls], i) => (
             <span key={i} className={`px-3 py-1 rounded-full text-sm font-semibold border ${cls}`}>{name}</span>
           ))}
