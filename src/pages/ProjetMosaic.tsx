@@ -21,9 +21,7 @@ export default function ProjetMosaic() {
         <div className="flex flex-wrap justify-center gap-2 mb-6">
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Next.js</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-sky-500/20 text-sky-300 border border-sky-500/30">React</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Tailwind CSS</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">Canvas API</span>
-          <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-500/20 text-gray-300 border border-gray-500/30">Vercel</span>
         </div>
         <div className="flex gap-3">
           <Button asChild>
