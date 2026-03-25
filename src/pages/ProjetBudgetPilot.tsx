@@ -51,11 +51,6 @@ export default function ProjetBudgetPilot() {
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-500/20 text-green-300 border border-green-500/30">Node.js</span>
           <span className="px-3 py-1 rounded-full text-sm font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">SQLite</span>
         </div>
-        <div className="flex gap-3">
-          <Button asChild variant="outline">
-            <a href="https://github.com/levanawizman/BudgetPilot" target="_blank" rel="noreferrer">GitHub</a>
-          </Button>
-        </div>
       </div>
 
       {/* Contenu */}
