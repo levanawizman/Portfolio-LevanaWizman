@@ -12,10 +12,10 @@ export default function All() {
       <div id="home" className="scroll-mt-16 md:scroll-mt-20"><Home /></div>
       <div id="about" className="scroll-mt-16 md:scroll-mt-20"><About /></div>
       <div id="parcours" className="scroll-mt-16 md:scroll-mt-20"><Parcours /></div>
+      <div id="skills" className="scroll-mt-16 md:scroll-mt-20"><Skills /></div>
       <div id="entreprise" className="scroll-mt-16 md:scroll-mt-20"><Entreprise /></div>
       <div id="projects" className="scroll-mt-16 md:scroll-mt-20"><Projects /></div>
       <div id="veille" className="scroll-mt-16 md:scroll-mt-20"><Veille /></div>
-      <div id="skills" className="scroll-mt-16 md:scroll-mt-20"><Skills /></div>
     </main>
   )
 }

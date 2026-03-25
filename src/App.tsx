@@ -38,7 +38,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/parcours" element={<Parcours />} />
         <Route path="/entreprise" element={<Entreprise />} />
-        <Route path="/projects" element={<><Projects /><Veille /><Skills /></>} />
+        <Route path="/projects" element={<><Projects /><Veille /></>} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/presentation" element={<Presentation />} />
         <Route path="/fiche" element={<Fiche />} />

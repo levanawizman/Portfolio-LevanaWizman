@@ -46,14 +46,14 @@ export function Slides() {
       <div id="slide-parcours" className="min-h-screen snap-start flex items-center">
         <Parcours />
       </div>
+      <div id="slide-skills" className="min-h-screen snap-start flex items-center">
+        <Skills />
+      </div>
       <div id="slide-entreprise" className="min-h-screen snap-start flex items-center">
         <Entreprise />
       </div>
       <div id="slide-projects" className="min-h-screen snap-start flex items-center">
         <Projects />
-      </div>
-      <div id="slide-skills" className="min-h-screen snap-start flex items-center">
-        <Skills />
       </div>
     </div>
   )

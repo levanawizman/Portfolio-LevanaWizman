@@ -7,10 +7,10 @@ const links = [
   { id: 'home', label: 'Accueil' },
   { id: 'about', label: 'À propos' },
   { id: 'parcours', label: 'Mon parcours' },
+  { id: 'skills', label: 'Compétences' },
   { id: 'entreprise', label: 'Entreprise' },
   { id: 'projects', label: 'Projets' },
   { id: 'veille', label: 'Veille' },
-  { id: 'skills', label: 'Compétences' },
 ]
 
 export function Navbar() {
