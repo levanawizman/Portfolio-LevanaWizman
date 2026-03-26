@@ -41,6 +41,12 @@ const others: Skill[] = [
     className: 'bg-violet-100 text-violet-800 border-violet-200'
   },
   {
+    name: 'Symfony',
+    icon: svgIcon('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg', 'Logo Symfony'),
+    variant: 'default',
+    className: 'bg-violet-100 text-violet-800 border-violet-200'
+  },
+  {
     name: 'MySQL',
     icon: svgIcon('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', 'Logo MySQL'),
     variant: 'default',
