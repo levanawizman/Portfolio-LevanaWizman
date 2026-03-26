@@ -42,7 +42,6 @@ export default function Veille() {
             <h3 className="text-base font-bold text-gray-900 mb-3">💡 Ce que j'ai retenu</h3>
             <div className="space-y-3">
               {[
-                { tool: 'GitHub Copilot', desc: 'Suggère du code en temps réel, fait gagner du temps sur les tâches répétitives' },
                 { tool: 'ChatGPT / Claude', desc: 'Aide à débugger, comprendre des erreurs et générer du code de base' },
                 { tool: 'Cursor', desc: 'Éditeur de code qui intègre l\'IA directement dans le workflow du développeur' },
                 { tool: 'Les limites', desc: 'L\'IA peut se tromper, inventer des choses et ne comprend pas le besoin métier' },
